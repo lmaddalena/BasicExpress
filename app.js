@@ -8,11 +8,13 @@ var app = express();
 var handlebars = require('express3-handlebars').create({ defaultLayout: 'main', extname: '.hbs' });
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
-app.use(express.static(__dirname + '/public'));
 
 // =======================================================================================
 // MIDDLEWARE
 // =======================================================================================
+
+// static resources
+app.use(express.static(__dirname + '/public'));
 
 // logger 
 switch(app.get('env')){
