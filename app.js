@@ -5,7 +5,19 @@ var express = require('express');
 var app = express();
 
 // set up handlebars
-var handlebars = require('express3-handlebars').create({ defaultLayout: 'main', extname: '.hbs' });
+var handlebars = require('express3-handlebars').create(
+    { 
+        defaultLayout: 'main', 
+        extname: '.hbs',
+        helpers: {                                          // add a helper called 'section'
+            section: function(name, options){               // {{{_sections.script}}}
+                if(!this._sections) this._sections = {};    // now you can use the helper in a view:
+                this._sections[name] = options.fn(this);    // {{#section 'script'}}
+                return null;                                // ...
+            }                                               // {{/section}}
+        }                                                   //
+    });
+
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 

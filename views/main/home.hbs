@@ -5,3 +5,16 @@
   <span class="sr-only">Error:</span>
   Enter a valid email address
 </div>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+{{#section 'script'}}
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})  
+  </script>
+
+{{/section}}    
+
