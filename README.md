@@ -12,7 +12,7 @@ Use this template to quickly start any new project with Express, Handlebars, Boo
 * morgan
 
 ## Quick start
-1. Clone the git repo - `git clone https://github.com/lmaddalena/BasicExpress.git`
+1. Clone the git repo - `git clone https://github.com/lmaddalena/BasicExpress.git &lt;directory&gt;`
 2. Install required packages - `npm install`
 3. Initialize you application - `npm init`
 3. Start the application - `npm start`
