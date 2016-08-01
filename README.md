@@ -13,7 +13,8 @@ Use this template to quickly start any new project with Express, Handlebars, Boo
 
 ## Quick start
 1. Clone the git repo - `git clone https://github.com/lmaddalena/ExpressBasic.git`
-2. Install required packahes - `npm init`
+2. Install required packahes - `npm install`
+3. Initialize you application - `npm init`
 3. Start the application - `npm start`
 
 ## License
