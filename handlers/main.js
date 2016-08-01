@@ -11,5 +11,5 @@ exports.about = function(req, res, next){
 
 // GET /contact
 exports.contact = function(req, res, next){      
-    res.render('main/contact', { title : "Contatc" });    
+    res.render('main/contact', { title : "Contact" });    
 };
