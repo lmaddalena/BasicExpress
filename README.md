@@ -1,4 +1,4 @@
-# Express Basic Template
+# NodeJS/Express Basic Template
 
 Use this template to quickly start any new project with Express, Handlebars, Boostrap and JQuery.
 
