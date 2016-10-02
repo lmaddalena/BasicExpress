@@ -6,7 +6,8 @@ var app = express();
 
 // set up handlebars
 var handlebars = require('express3-handlebars').create(
-    { 
+    {  
+        layoutsDir: __dirname + '/views/layouts',
         defaultLayout: 'main', 
         extname: '.hbs',
         helpers: {                                          // add a helper called 'section'
@@ -20,6 +21,7 @@ var handlebars = require('express3-handlebars').create(
 
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
+app.set('views', __dirname + '/views');
 
 // =======================================================================================
 // MIDDLEWARE
